@@ -3,8 +3,7 @@
 ## This is the midterm assignment for building Realtime Analytics Solution with Kafka ecosystem and pinot for OLAP with Streamlit dashboard.
 
 ### Report
-- [View Report](https://github.com/chayaphon/DADS6005/blob/main/realtime_analytics/Report.pdf)
-- [Download Report](https://github.com/chayaphon/DADS6005/blob/main/realtime_analytics/Report.pdf)
+- [View Report](https://github.com/chayaphon/realtime_analytics/blob/main/Report.pdf)
 
 ## License
 [Educational Purpose License](https://github.com/chayaphon/DADS6003/blob/main/LICENSE.md)
