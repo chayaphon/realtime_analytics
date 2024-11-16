@@ -1,0 +1,27 @@
+{
+    "schemaName": "PageView",
+    "dimensionFieldSpecs": [
+      {
+        "name": "userid",
+        "dataType": "STRING"
+      },
+      {
+        "name": "pageid",
+        "dataType": "STRING"
+      }
+    ],
+    "metricFieldSpecs": [
+      {
+        "name": "viewtime",
+        "dataType": "LONG"
+      }
+    ],
+    "dateTimeFieldSpecs": [
+      {
+        "name": "timestamp",
+        "dataType": "LONG",
+        "format": "1:MILLISECONDS:EPOCH",
+        "granularity": "1:MILLISECONDS"
+      }
+    ]
+  }

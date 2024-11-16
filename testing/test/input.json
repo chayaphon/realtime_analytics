@@ -1,0 +1,56 @@
+{
+    "inputs": [
+      {
+        "topic": "User_",
+        "key": null,
+        "value": {
+          "registertime": 1500023204411,
+          "userid": "User_1",
+          "regionid": "Region_1",
+          "gender": "MALE",
+          "interests": ["Sports", "Music"],
+          "contactinfo": {
+            "zipcode": "12345",
+            "state": "NY",
+            "phone": "1234567890",
+            "city": "New York"
+          }
+        }
+      },
+      {
+        "topic": "User_",
+        "key": null,
+        "value": {
+          "registertime": 1500023204412,
+          "userid": "User_2",
+          "regionid": "Region_2",
+          "gender": "FEMALE",
+          "interests": ["Movies", "Travel"],
+          "contactinfo": {
+            "zipcode": "54321",
+            "state": "CA",
+            "phone": "0987654321",
+            "city": "Los Angeles"
+          }
+        }
+      },
+      {
+        "topic": "User_",
+        "key": null,
+        "value": {
+          "registertime": 1500023204413,
+          "userid": "User_3",
+          "regionid": "Region_1",
+          "gender": "OTHER",
+          "interests": ["Gaming", "Tech"],
+          "contactinfo": {
+            "zipcode": "67890",
+            "state": "IL",
+            "phone": "1112223333",
+            "city": "Chicago"
+          }
+        }
+      }
+    ]
+  }
+  

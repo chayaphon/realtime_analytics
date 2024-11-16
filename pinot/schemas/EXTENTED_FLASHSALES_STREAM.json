@@ -1,0 +1,59 @@
+{
+    "schemaName": "EXTENTED_FLASHSALES_STREAM",
+    "dimensionFieldSpecs": [
+      {
+        "name": "FS_PRODUCT_ID",
+        "dataType": "STRING"
+      },
+      {
+        "name": "REGION_NAME",
+        "dataType": "STRING"
+      },
+      {
+        "name": "PRODUCT_GROUP",
+        "dataType": "STRING"
+      },
+      {
+        "name": "PRODUCT_NAME",
+        "dataType": "STRING"
+      }
+    ],
+    "metricFieldSpecs": [
+      {
+        "name": "SALE_ID",
+        "dataType": "LONG"
+      },
+      {
+        "name": "CUSTOMER_ID",
+        "dataType": "LONG"
+      },
+      {
+        "name": "PROVINCE_ID",
+        "dataType": "INT"
+      },
+      {
+        "name": "SALE_PRICE",
+        "dataType": "DOUBLE"
+      },
+      {
+        "name": "QUANTITY",
+        "dataType": "DOUBLE"
+      },
+      {
+        "name": "SALES_AMOUNT",
+        "dataType": "DOUBLE"
+      },
+      {
+        "name": "DISCOUNT",
+        "dataType": "DOUBLE"
+      }
+    ],
+    "dateTimeFieldSpecs": [
+      {
+        "name": "SALE_DATETIME",
+        "dataType": "LONG",
+        "format": "1:MILLISECONDS:EPOCH",
+        "granularity": "1:HOURS"
+      }
+    ]
+  }

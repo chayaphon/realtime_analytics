@@ -1,0 +1,4 @@
+CREATE TABLE REGION_TABLE (
+    region_id VARCHAR PRIMARY KEY,
+    region_name VARCHAR
+) WITH (KAFKA_TOPIC='MysqlSource-region', VALUE_FORMAT='AVRO');

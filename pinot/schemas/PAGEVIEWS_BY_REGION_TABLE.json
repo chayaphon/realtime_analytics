@@ -1,0 +1,23 @@
+{
+    "schemaName": "PAGEVIEWS_BY_REGION_TABLE",
+    "dimensionFieldSpecs": [
+      {
+        "name": "REGION_NAME",
+        "dataType": "STRING"
+      }
+    ],
+    "metricFieldSpecs": [
+      {
+        "name": "COUNT_VIEW",
+        "dataType": "LONG"
+      }
+    ],
+    "dateTimeFieldSpecs": [
+      {
+        "name": "timestamp",
+        "dataType": "LONG",
+        "format": "1:MILLISECONDS:EPOCH",
+        "granularity": "1:MILLISECONDS"
+      }
+    ]
+  }

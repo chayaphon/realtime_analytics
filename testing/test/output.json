@@ -1,0 +1,23 @@
+{
+    "outputs": [
+      {
+        "topic": "USERS_PER_REGION",
+        "key": "Region_1",
+        "value": {"USER_COUNT": 1},
+        "timestamp": 1500023204411
+      },
+      {
+        "topic": "USERS_PER_REGION",
+        "key": "Region_2",
+        "value": {"USER_COUNT": 1},
+        "timestamp": 1500023204412
+      },
+      {
+        "topic": "USERS_PER_REGION",
+        "key": "Region_1",
+        "value": {"USER_COUNT": 2},
+        "timestamp": 1500023204413
+      }
+    ]
+  }
+  

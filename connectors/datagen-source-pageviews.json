@@ -1,0 +1,8 @@
+{
+	"name": "datagen-source-pageviews",
+	"connector.class": "io.confluent.kafka.connect.datagen.DatagenConnector",
+	"quickstart": "pageviews",
+	"kafka.topic": "PageView",
+	"max.interval": "1000",
+	"key.converter": "org.apache.kafka.connect.storage.StringConverter"
+}

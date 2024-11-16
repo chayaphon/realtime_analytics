@@ -1,0 +1,21 @@
+{
+    "schemaName": "REGION_TABLE",
+    "dimensionFieldSpecs": [
+      {
+        "name": "region_id",
+        "dataType": "STRING"
+      },
+      {
+        "name": "region_name",
+        "dataType": "STRING"
+      }
+    ],
+    "dateTimeFieldSpecs": [
+      {
+        "name": "timestamp",
+        "dataType": "LONG",
+        "format": "1:MILLISECONDS:EPOCH",
+        "granularity": "1:MILLISECONDS"
+      }
+    ]
+  }

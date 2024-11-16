@@ -1,0 +1,5 @@
+streamlit
+plotly
+pandas
+pinotdb
+streamlit_autorefresh

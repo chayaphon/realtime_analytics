@@ -1,0 +1,25 @@
+{
+    "schemaName": "PRODUCT_TABLE",
+    "dimensionFieldSpecs": [
+      {
+        "name": "product_id",
+        "dataType": "STRING"
+      },
+      {
+        "name": "product_group",
+        "dataType": "STRING"
+      },
+      {
+        "name": "product_name",
+        "dataType": "STRING"
+      }
+    ],
+    "dateTimeFieldSpecs": [
+      {
+        "name": "timestamp",
+        "dataType": "LONG",
+        "format": "1:MILLISECONDS:EPOCH",
+        "granularity": "1:MILLISECONDS"
+      }
+    ]
+  }

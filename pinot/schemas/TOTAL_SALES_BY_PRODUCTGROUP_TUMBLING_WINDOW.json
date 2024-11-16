@@ -1,0 +1,35 @@
+{
+    "schemaName": "TOTAL_SALES_BY_PRODUCTGROUP_TUMBLING_WINDOW",
+    "dimensionFieldSpecs": [
+      {
+        "name": "PRODUCT_GROUP",
+        "dataType": "STRING"
+      },
+      {
+        "name": "WINDOW_END",
+        "dataType": "STRING"
+      }
+    ],
+    "metricFieldSpecs": [
+      {
+        "name": "TOTAL_SALES",
+        "dataType": "DOUBLE"
+      },
+      {
+        "name": "TOTAL_QUANTITY",
+        "dataType": "DOUBLE"
+      },
+      {
+        "name": "SALES_COUNT",
+        "dataType": "LONG"
+      }
+    ],
+    "dateTimeFieldSpecs": [
+      {
+        "name": "WINDOW_START",
+        "dataType": "STRING",
+        "format": "1:MILLISECONDS:EPOCH",
+        "granularity": "1:HOURS"
+      }
+    ]
+  }

@@ -1,0 +1,244 @@
+mysql> show tables;
++--------------------+
+| Tables_in_dads6005 |
++--------------------+
+| flash_sales        |
+| pages              |
+| product            |
+| region             |
++--------------------+
+4 rows in set (0.00 sec)
+
+
+-------------------------------------------------------------------------------------------
+
+Master Data
+
+mysql> select * from region;
++-----------+-------------+
+| region_id | region_name |
++-----------+-------------+
+| Region_1  | Central     |
+| Region_2  | North       |
+| Region_3  | North-East  |
+| Region_4  | Eastern     |
+| Region_5  | South-East  |
+| Region_6  | South       |
+| Region_7  | South-West  |
+| Region_8  | Westtern    |
+| Region_9  | North-West  |
++-----------+-------------+
+9 rows in set (0.00 sec)
+
+mysql> select * from product;
++------------+---------------+---------------------------+
+| product_id | product_group | product_name              |
++------------+---------------+---------------------------+
+| P10        | Electronics   | Smartphone Accessories    |
+| P11        | Electronics   | Laptops & Notebooks       |
+| P12        | Electronics   | Headphones & Earbuds      |
+| P13        | Electronics   | Smart Home Devices        |
+| P14        | Electronics   | Digital Cameras           |
+| P15        | Electronics   | Gaming Consoles           |
+| P16        | Electronics   | Television & Accessories  |
+| P17        | Electronics   | Portable Chargers         |
+| P18        | Electronics   | Bluetooth Speakers        |
+| P19        | Electronics   | Wearable Technology       |
+| P20        | Electronics   | Computer Components       |
+| P21        | Electronics   | Networking Devices        |
+| P22        | Electronics   | Drones & Quadcopters      |
+| P23        | Electronics   | Smart Watches             |
+| P24        | Electronics   | Tablet Accessories        |
+| P25        | Electronics   | Virtual Reality Headsets  |
+| P26        | Electronics   | Home Audio Systems        |
+| P27        | Electronics   | Printers & Scanners       |
+| P28        | Electronics   | Projectors                |
+| P29        | Electronics   | e-Readers                 |
+| P30        | Fashion       | Men's Clothing            |
+| P31        | Fashion       | Women's Clothing          |
+| P32        | Fashion       | Kids' Wear                |
+| P33        | Fashion       | Footwear                  |
+| P34        | Fashion       | Bags & Luggage            |
+| P35        | Fashion       | Jewelry                   |
+| P36        | Fashion       | Watches                   |
+| P37        | Fashion       | Sunglasses                |
+| P38        | Fashion       | Hats & Caps               |
+| P39        | Fashion       | Belts                     |
+| P40        | Fashion       | Scarves & Shawls          |
+| P41        | Fashion       | Cosmetics                 |
+| P42        | Fashion       | Perfumes                  |
+| P43        | Fashion       | Accessories               |
+| P44        | Fashion       | Formal Wear               |
+| P45        | Fashion       | Casual Wear               |
+| P46        | Fashion       | Sportswear                |
+| P47        | Fashion       | Sleepwear                 |
+| P48        | Fashion       | Winter Clothing           |
+| P49        | Fashion       | Handmade Jewelry          |
+| P50        | Furniture     | Living Room Furniture     |
+| P51        | Furniture     | Bedroom Furniture         |
+| P52        | Furniture     | Office Furniture          |
+| P53        | Furniture     | Dining Room Sets          |
+| P54        | Furniture     | Outdoor Furniture         |
+| P55        | Furniture     | Storage Solutions         |
+| P56        | Furniture     | Kitchen Cabinets          |
+| P57        | Furniture     | TV Stands                 |
+| P58        | Furniture     | Sofas & Sectionals        |
+| P59        | Furniture     | Coffee Tables             |
+| P60        | Furniture     | Bookshelves               |
+| P61        | Furniture     | Beds & Mattresses         |
+| P62        | Furniture     | Wardrobes                 |
+| P63        | Furniture     | Dressers                  |
+| P64        | Furniture     | Nightstands               |
+| P65        | Furniture     | Office Chairs             |
+| P66        | Furniture     | Desks                     |
+| P67        | Furniture     | Patio Furniture           |
+| P68        | Furniture     | Bean Bags                 |
+| P69        | Furniture     | Home Decor                |
+| P70        | Dry Grocery   | Cereals & Breakfast Foods |
+| P71        | Dry Grocery   | Snacks                    |
+| P72        | Dry Grocery   | Pasta & Noodles           |
+| P73        | Dry Grocery   | Canned Foods              |
+| P74        | Dry Grocery   | Condiments & Sauces       |
+| P75        | Dry Grocery   | Spices & Herbs            |
+| P76        | Dry Grocery   | Baking Supplies           |
+| P77        | Dry Grocery   | Tea & Coffee              |
+| P78        | Dry Grocery   | Juices & Soft Drinks      |
+| P79        | Dry Grocery   | Cookies & Biscuits        |
+| P80        | Dry Grocery   | Energy Bars               |
+| P81        | Dry Grocery   | Dried Fruits & Nuts       |
+| P82        | Dry Grocery   | Instant Foods             |
+| P83        | Dry Grocery   | Organic Food              |
+| P84        | Dry Grocery   | Grains & Rice             |
+| P85        | Dry Grocery   | Sugar & Sweeteners        |
+| P86        | Dry Grocery   | Soup & Broth              |
+| P87        | Dry Grocery   | Baby Food                 |
+| P88        | Dry Grocery   | Flour & Baking Essentials |
+| P89        | Dry Grocery   | Canned Fish               |
+| P90        | Other         | Art Supplies              |
+| P91        | Other         | Gift Wrap & Cards         |
+| P92        | Other         | Craft Kits                |
+| P93        | Other         | Board Games               |
+| P94        | Other         | Pet Supplies              |
+| P95        | Other         | Health & Wellness         |
+| P96        | Other         | Stationery                |
+| P97        | Other         | Garden & Plants           |
+| P98        | Other         | Fitness Equipment         |
+| P99        | Other         | Travel Accessories        |
++------------+---------------+---------------------------+
+90 rows in set (0.00 sec)
+
+
+mysql> select * from pages;
++---------+-------------+---------------------------+
+| page_id | page_group  | page_name                 |
++---------+-------------+---------------------------+
+| Page_10 | Electronics | Smartphone Accessories    |
+| Page_11 | Electronics | Laptops & Notebooks       |
+| Page_12 | Electronics | Headphones & Earbuds      |
+| Page_13 | Electronics | Smart Home Devices        |
+| Page_14 | Electronics | Digital Cameras           |
+| Page_15 | Electronics | Gaming Consoles           |
+| Page_16 | Electronics | Television & Accessories  |
+| Page_17 | Electronics | Portable Chargers         |
+| Page_18 | Electronics | Bluetooth Speakers        |
+| Page_19 | Electronics | Wearable Technology       |
+| Page_20 | Electronics | Computer Components       |
+| Page_21 | Electronics | Networking Devices        |
+| Page_22 | Electronics | Drones & Quadcopters      |
+| Page_23 | Electronics | Smart Watches             |
+| Page_24 | Electronics | Tablet Accessories        |
+| Page_25 | Electronics | Virtual Reality Headsets  |
+| Page_26 | Electronics | Home Audio Systems        |
+| Page_27 | Electronics | Printers & Scanners       |
+| Page_28 | Electronics | Projectors                |
+| Page_29 | Electronics | e-Readers                 |
+| Page_30 | Fashion     | Men's Clothing            |
+| Page_31 | Fashion     | Women's Clothing          |
+| Page_32 | Fashion     | Kids' Wear                |
+| Page_33 | Fashion     | Footwear                  |
+| Page_34 | Fashion     | Bags & Luggage            |
+| Page_35 | Fashion     | Jewelry                   |
+| Page_36 | Fashion     | Watches                   |
+| Page_37 | Fashion     | Sunglasses                |
+| Page_38 | Fashion     | Hats & Caps               |
+| Page_39 | Fashion     | Belts                     |
+| Page_40 | Fashion     | Scarves & Shawls          |
+| Page_41 | Fashion     | Cosmetics                 |
+| Page_42 | Fashion     | Perfumes                  |
+| Page_43 | Fashion     | Accessories               |
+| Page_44 | Fashion     | Formal Wear               |
+| Page_45 | Fashion     | Casual Wear               |
+| Page_46 | Fashion     | Sportswear                |
+| Page_47 | Fashion     | Sleepwear                 |
+| Page_48 | Fashion     | Winter Clothing           |
+| Page_49 | Fashion     | Handmade Jewelry          |
+| Page_50 | Furniture   | Living Room Furniture     |
+| Page_51 | Furniture   | Bedroom Furniture         |
+| Page_52 | Furniture   | Office Furniture          |
+| Page_53 | Furniture   | Dining Room Sets          |
+| Page_54 | Furniture   | Outdoor Furniture         |
+| Page_55 | Furniture   | Storage Solutions         |
+| Page_56 | Furniture   | Kitchen Cabinets          |
+| Page_57 | Furniture   | TV Stands                 |
+| Page_58 | Furniture   | Sofas & Sectionals        |
+| Page_59 | Furniture   | Coffee Tables             |
+| Page_60 | Furniture   | Bookshelves               |
+| Page_61 | Furniture   | Beds & Mattresses         |
+| Page_62 | Furniture   | Wardrobes                 |
+| Page_63 | Furniture   | Dressers                  |
+| Page_64 | Furniture   | Nightstands               |
+| Page_65 | Furniture   | Office Chairs             |
+| Page_66 | Furniture   | Desks                     |
+| Page_67 | Furniture   | Patio Furniture           |
+| Page_68 | Furniture   | Bean Bags                 |
+| Page_69 | Furniture   | Home Decor                |
+| Page_70 | Dry Grocery | Cereals & Breakfast Foods |
+| Page_71 | Dry Grocery | Snacks                    |
+| Page_72 | Dry Grocery | Pasta & Noodles           |
+| Page_73 | Dry Grocery | Canned Foods              |
+| Page_74 | Dry Grocery | Condiments & Sauces       |
+| Page_75 | Dry Grocery | Spices & Herbs            |
+| Page_76 | Dry Grocery | Baking Supplies           |
+| Page_77 | Dry Grocery | Tea & Coffee              |
+| Page_78 | Dry Grocery | Juices & Soft Drinks      |
+| Page_79 | Dry Grocery | Cookies & Biscuits        |
+| Page_80 | Dry Grocery | Energy Bars               |
+| Page_81 | Dry Grocery | Dried Fruits & Nuts       |
+| Page_82 | Dry Grocery | Instant Foods             |
+| Page_83 | Dry Grocery | Organic Food              |
+| Page_84 | Dry Grocery | Grains & Rice             |
+| Page_85 | Dry Grocery | Sugar & Sweeteners        |
+| Page_86 | Dry Grocery | Soup & Broth              |
+| Page_87 | Dry Grocery | Baby Food                 |
+| Page_88 | Dry Grocery | Flour & Baking Essentials |
+| Page_89 | Dry Grocery | Canned Fish               |
+| Page_90 | Other       | Art Supplies              |
+| Page_91 | Other       | Gift Wrap & Cards         |
+| Page_92 | Other       | Craft Kits                |
+| Page_93 | Other       | Board Games               |
+| Page_94 | Other       | Pet Supplies              |
+| Page_95 | Other       | Health & Wellness         |
+| Page_96 | Other       | Stationery                |
+| Page_97 | Other       | Garden & Plants           |
+| Page_98 | Other       | Fitness Equipment         |
+| Page_99 | Other       | Travel Accessories        |
++---------+-------------+---------------------------+
+90 rows in set (0.00 sec)
+
+
+-------------------------------------------------------------------------------------------
+Transaction Event
+
+mysql> select * from flash_sales;
++---------+-------------+-------------+------------+-----------+----------+----------------+------------+----------+---------------------+
+| sale_id | customer_id | province_id | product_id | region_id | discount | original_price | sale_price | quantity | sale_datetime       |
++---------+-------------+-------------+------------+-----------+----------+----------------+------------+----------+---------------------+
+|       1 |    25502700 |          54 | P32        | 6         |    18.15 |         344.30 |     281.81 |        7 | 2024-11-12 15:33:04 |
+|       2 |    45807935 |          72 | P90        | 6         |    43.25 |         107.69 |      61.11 |        8 | 2024-11-12 15:32:53 |
+|       3 |    39086345 |          23 | P85        | 6         |     6.81 |         385.74 |     359.47 |        6 | 2024-11-12 15:35:58 |
+|       4 |    13656667 |          57 | P27        | 3         |    20.06 |         288.57 |     230.68 |       10 | 2024-11-12 15:36:18 |
+|       5 |    67919236 |          45 | P88        | 3         |    23.04 |         124.34 |      95.69 |        1 | 2024-11-12 15:33:58 |
+|       6 |    87798892 |          70 | P13        | 4         |    25.71 |         460.40 |     342.03 |        9 | 2024-11-12 15:36:23 |
+..
+...
+.... N
